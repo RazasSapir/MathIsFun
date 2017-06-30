@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MathIsFun</string>
+    <string name="description">"Let's practice"</string>
 </resources>

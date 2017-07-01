@@ -2,6 +2,10 @@
     <string name="app_name">MathIsFun</string>
     <string name="description">"Let's practice with numbers from"</string>
     <string name="to">to</string>
-    <string name="tab"></string>
     <string name="answer">Your answer</string>
+    <string name="plus">Plus</string>
+    <string name="minus">Minus</string>
+    <string name="multiplication">Multiplication</string>
+    <string name="division">Division</string>
+    <string name="include">Include:</string>
 </resources>

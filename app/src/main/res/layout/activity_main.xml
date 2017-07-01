@@ -43,9 +43,9 @@
 
         <EditText
             android:id="@+id/to_number"
-            android:inputType="number"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:inputType="number" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,59 +55,62 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:text="@string/include"
             android:textColor="#000000"
-            android:textSize="15sp"
-            android:layout_marginBottom="16dp"/>
+            android:textSize="15sp" />
 
         <CheckBox
+            android:id="@+id/plus_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
             android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
             android:text="@string/plus" />
 
         <CheckBox
+            android:id="@+id/minus_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
             android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
             android:text="@string/minus" />
 
         <CheckBox
+            android:id="@+id/multiplication_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
             android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
             android:text="@string/multiplication" />
 
         <CheckBox
+            android:id="@+id/division_checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"
-            android:paddingLeft="16dp"
-            android:paddingStart="16dp"
-            android:paddingRight="16dp"
             android:paddingEnd="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingStart="16dp"
             android:text="@string/division" />
     </LinearLayout>
 

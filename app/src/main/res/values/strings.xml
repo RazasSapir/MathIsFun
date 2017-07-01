@@ -2,4 +2,6 @@
     <string name="app_name">MathIsFun</string>
     <string name="description">"Let's practice with numbers from"</string>
     <string name="to">to</string>
+    <string name="tab"></string>
+    <string name="answer">Your answer</string>
 </resources>

@@ -25,6 +25,7 @@
             android:textSize="15sp" />
 
         <EditText
+            android:hint="@string/tab"
             android:id="@+id/from_number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
@@ -39,12 +40,14 @@
             android:textSize="15sp" />
 
         <EditText
+            android:hint="@string/tab"
             android:id="@+id/to_number"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -66,5 +69,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="28sp" />
+
     </LinearLayout>
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/user_answer"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

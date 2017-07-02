@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">כיף בחשבון</string>
+    <string name="answer">תשובתך</string>
+    <string name="check_button">בדיקה</string>
+    <string name="correct">נכון</string>
+    <string name="description">תרגילים עם מספרים מ-</string>
+    <string name="include">לכלול:</string>
+    <string name="division">חילוק</string>
+    <string name="minus">חיסור</string>
+    <string name="incorrect">לא נכון</string>
+    <string name="multiplication">כפל</string>
+    <string name="next_button">לתרגיל הבא</string>
+    <string name="plus">חיבור</string>
+    <string name="to">עד</string>
+    <string name="failed_to_show_exercise">לא יכול לקבוע תרגיל בדוק את ההעדפות</string>
+    <string name="large_answer">מספר זה גדול מדי</string>
+</resources>

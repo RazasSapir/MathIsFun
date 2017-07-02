@@ -1,7 +1,6 @@
 package com.example.android.mathisfun;
 
 import android.os.Bundle;
-import android.support.annotation.IntegerRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +12,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Random;
 
-import static android.R.attr.id;
 
 public class MainActivity extends AppCompatActivity {
     int min = -1;

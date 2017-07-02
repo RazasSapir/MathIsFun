@@ -3,9 +3,12 @@ package com.example.android.mathisfun;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     int secondNumber;
     String operator = "";
     int answer;
+    boolean photoState = false; //False = closed, True = open
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +32,35 @@ public class MainActivity extends AppCompatActivity {
         setCheckboxToTrue();
         setValuesForEditText();
         initiateOnClickExerciseMaker();
+        initiateExpandButton();
         setCheckOnClick();
         initiateExercise();
+    }
+
+    public void initiateExpandButton() {
+        ImageView button = (ImageView) findViewById(R.id.expand_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                expandLayout();
+            }
+        });
+    }
+
+    public void expandLayout() {
+        LinearLayout layout = (LinearLayout) findViewById(R.id.setting_page);
+        ImageView button = (ImageView) findViewById(R.id.expand_button);
+        ViewGroup.LayoutParams params = layout.getLayoutParams();
+        if (photoState) {
+            params.height = 0;
+            layout.setLayoutParams(params);
+            button.setImageResource(R.drawable.arrow_up);
+        } else {
+            params.height = ViewGroup.LayoutParams.WRAP_CONTENT;
+            layout.setLayoutParams(params);
+            button.setImageResource(R.drawable.arrow_down);
+        }
+        photoState = !photoState;
     }
 
     public boolean validateAllInstructions() {
@@ -46,8 +77,7 @@ public class MainActivity extends AppCompatActivity {
             if (firstNum > secondNum) {
                 return false;
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             return false;
         }
         if (plusChecker.isChecked() || minusChecker.isChecked() || multiChecker.isChecked() || divChecker.isChecked()) {

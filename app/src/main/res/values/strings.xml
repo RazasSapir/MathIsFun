@@ -14,4 +14,5 @@
     <string name="incorrect">incorrect</string>
     <string name="failed_to_show_exercise">"Can't load exercise, check your preferences"</string>
     <string name="large_answer">This number is too large</string>
+    <string name="settings">"Settings:"</string>>
 </resources>

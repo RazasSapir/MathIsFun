@@ -15,4 +15,5 @@
     <string name="to">עד</string>
     <string name="failed_to_show_exercise">לא יכול לקבוע תרגיל בדוק את ההעדפות</string>
     <string name="large_answer">מספר זה גדול מדי</string>
+    <string name="settings">הגדרות:</string>
 </resources>
